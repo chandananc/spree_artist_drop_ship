@@ -26,10 +26,10 @@
       <%= form.text_field :url, :class => 'form-control' %>
     <% end %>
     
-    <%= form.field_container :image , class: ['form-group'] do %>
-        <%= form.label :image, Spree::Artist.human_attribute_name(:image) %>:<br />
-        <%= form.file_field :image, :class => 'form-control' %>
-    <% end %>
+    <%= form.field_container :profile_picture , class: ['form-group'] do %>
+        <%= form.label :profile_picture, Spree::Supplier.human_attribute_name(:profile_picture) %>:<br />
+        <%= form.file_field :profile_picture, :class => 'form-control' %>
+      <% end %>
       
     <%= form.field_container :tax_id, class: ['form-group'] do %>
       <%= form.label :tax_id, Spree::Artist.human_attribute_name(:tax_id) %>:<br />
