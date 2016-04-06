@@ -1,0 +1,12 @@
+<!-- insert_bottom "[data-hook=admin_stock_locations_form_fields]" -->
+
+<%# Remove extra div and change classes %>
+<% if spree_current_user.admin? %>
+    <div class='form-group'>
+      <%= f.field_container :artist do %>
+        <%= f.label :artist_id, Spree.t(:artist) %>
+        <%= f.collection_select(:artist_id, Spree::Artist.all, :id, :name, { :include_blank => 'None' }, { :class => 'select2' }) %>
+        <%= f.error_message_on :artist %>
+      <% end %>
+    </div>
+<% end %>

@@ -1,0 +1,8 @@
+<!-- insert_top "div#main-sidebar" -->
+
+<%# Add tab "profile to admin tabs" %>
+<% if try_spree_current_user && try_spree_current_user.artist? %>
+<ul class="nav nav-sidebar">
+  <%= tab :profile, url: spree.edit_admin_artist_url(spree_current_user.artist_id), match_path: '/artists', icon: 'user' %>
+</ul>
+<% end %>

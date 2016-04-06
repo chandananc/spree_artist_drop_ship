@@ -1,0 +1,3 @@
+<!-- insert_bottom "[data-hook='admin_configurations_sidebar_menu'], #admin_configurations_sidebar_menu[data-hook]" -->
+
+<%= configurations_sidebar_menu_item Spree.t(:artist_drop_ship_settings), spree.edit_admin_artist_drop_ship_settings_path %>
