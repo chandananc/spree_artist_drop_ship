@@ -6,11 +6,11 @@
   <%= tab :artists, label: Spree.t(:artists), match_path: '/artists', icon: 'home' %>
 </ul>
 <% end %>
-<% if can? :index, Spree::Shipment %>
+<!-- <% if can? :index, Spree::Shipment %>
 <ul class="nav nav-sidebar">
-  <%= tab :shipments, label: Spree.t(:shipments), match_path: '/artist_shipments', icon: 'plane' %>
+  <%= tab :shipments, label: Spree.t(:shipments), match_path: '/shipments', icon: 'plane' %>
 </ul>
-<% end %>
+<% end %> -->
 <% if try_spree_current_user.try(:artist?) and can? :index, Spree::StockLocation %>
 <ul class="nav nav-sidebar">
   <%= tab :stock_locations, label: Spree.t(:stock_locations), match_path: '/stock_locations', icon: 'globe' %>
