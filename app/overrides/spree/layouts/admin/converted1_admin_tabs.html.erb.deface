@@ -8,7 +8,7 @@
 <% end %>
 <% if can? :index, Spree::Shipment %>
 <ul class="nav nav-sidebar">
-  <%= tab :shipments, label: Spree.t(:shipments), match_path: '/shipments', icon: 'plane' %>
+  <%= tab :shipments, label: Spree.t(:shipments), match_path: '/artist_shipments', icon: 'plane' %>
 </ul>
 <% end %>
 <% if try_spree_current_user.try(:artist?) and can? :index, Spree::StockLocation %>
