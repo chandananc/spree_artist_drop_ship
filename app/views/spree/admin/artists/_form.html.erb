@@ -27,7 +27,7 @@
     <% end %>
     
     <%= form.field_container :profile_picture , class: ['form-group'] do %>
-        <%= form.label :profile_picture, Spree::Supplier.human_attribute_name(:profile_picture) %>:<br />
+        <%= form.label :profile_picture, Spree::Artist.human_attribute_name(:profile_picture) %>:<br />
         <%= form.file_field :profile_picture, :class => 'form-control' %>
       <% end %>
       
